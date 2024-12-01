@@ -1,0 +1,19 @@
+{
+  "name": "take-erc20-snapshot",
+  "version": "1.0.0",
+  "description": "this repo can help you take snap shot of an erc20 token onchain.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node snapshot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.5.1",
+    "dotenv": "^16.3.1",
+    "ethers": "^5.7.2",
+    "node-cron": "^3.0.2"
+  },
+  "keywords": [],
+  "author": "XYD.ME",
+  "license": "MIT"
+}
