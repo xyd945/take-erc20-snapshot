@@ -27,15 +27,15 @@ async function main() {
   };
 
   // Select Network
-  const networkChoice = 'ethereum'; // Change to 'polygon' or other networks as needed
+  const networkChoice = 'polygon'; // Change to 'polygon' or other networks as needed
   const network = networkConfig[networkChoice];
 
   // Initialize Provider
   const provider = new ethers.providers.JsonRpcProvider(network.rpcUrl);
 
   // ERC20 Token Contract Address
-  const tokenAddress = '0xB2dbF14D0b47ED3Ba02bDb7C954e05A72deB7544'; //ethereum
-  
+  //const tokenAddress = '0xB2dbF14D0b47ED3Ba02bDb7C954e05A72deB7544'; //ethereum
+  const tokenAddress = '0xF689E85988d3a7921E852867CE49F53388985E6d'; //polygon
   // ERC20 ABI (Minimal)
   const tokenAbi = [
     'event Transfer(address indexed from, address indexed to, uint256 value)',
@@ -139,7 +139,7 @@ async function getBlockNumberAtTimestamp(provider, timestamp) {
 }
 
 async function getTransferEvents(tokenContract, toBlock) {
-  const fromBlock = 12183385; // You can set this to the block when the token was created to optimize, the token is deployed at block 12183386.
+  const fromBlock = 12965303; // You can set this to the block when the token was created to optimize, the token is deployed at block 12183386.
  
   
 

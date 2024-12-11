@@ -218,9 +218,3 @@ License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 
-For MobiFi project: 
-Snapshot time: 2024-12-01T00:00:00Z
-Token price at snapshot time: $0.002082474485405656
-Taking snapshot at block number: 21303933
-Total Transfer Events Retrieved: 26930
-Total Addresses Holding Token: 2042
